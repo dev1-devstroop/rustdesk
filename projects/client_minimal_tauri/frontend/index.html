@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RustDesk Client Minimal</title>
+  <style>
+    body { margin: 0; font-family: sans-serif; }
+    #controls { padding: 10px; background: #f0f0f0; }
+    canvas { display: block; margin: 0 auto; background: #000; }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    Host: <input id="host" type="text" value="127.0.0.1" />
+    Port: <input id="port" type="number" value="8080" />
+    <button id="connect">Connect</button>
+    <span id="status">Disconnected</span>
+  </div>
+  <canvas id="canvas"></canvas>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
